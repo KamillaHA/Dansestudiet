@@ -34,7 +34,7 @@ module.exports = {
         mh4special: "1.25rem", //dansestudiet font H2 forside MOBIL
         mh2: "2.125rem", //prompt font H2 MOBIL
       },
-      spacing: {
+      padding: {
         s: "20px", //small padding
         m: "40px", //medium padding
         l: "60px", //large padding
