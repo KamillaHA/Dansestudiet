@@ -44,6 +44,14 @@ module.exports = {
         ml: "30px", //large padding MOBIL
         mxl: "50px", //xlarge padding MOBIL
       },
+      spacing: {
+        s: "10px", //small gap
+        m: "20px", //medium gap
+        l: "30px", //large gap
+        ms: "5px", //small gap MOBIL
+        mm: "10px", //medium gap MOBIL
+        ml: "15px", //large gap MOBIL
+      },
       borderRadius: {
         s: "12px", //small borderradius og på MOBIL
         m: "16px", //medium borderradius og på MOBIL
