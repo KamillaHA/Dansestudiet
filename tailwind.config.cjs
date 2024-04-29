@@ -28,8 +28,28 @@ module.exports = {
         h1special: "8rem", //dansestudiet font H1 forside
         h2special: "3rem", //dansestudiet font H2 forside
         h2: "2.25rem", //prompt font H2
-        h4: "1.25rem", //prompt font H4
-        p: "1rem", //prompt font P
+        h4: "1.25rem", //prompt font H4 og på MOBIL
+        p: "1rem", //prompt font P og på MOBIL
+        mh1special: "2.5rem", //dansestudiet font H1 forside MOBIL
+        mh4special: "1.25rem", //dansestudiet font H2 forside MOBIL
+        mh2: "2.125rem", //prompt font H2 MOBIL
+      },
+      spacing: {
+        s: "20px", //small padding
+        m: "40px", //medium padding
+        l: "60px", //large padding
+        xl: "100px", //xlarge padding
+        ms: "10px", //small padding MOBIL
+        mm: "20px", //medium padding MOBIL
+        ml: "30px", //large padding MOBIL
+        mxl: "50px", //xlarge padding MOBIL
+      },
+      borderRadius: {
+        s: "12px", //small borderradius og på MOBIL
+        m: "16px", //medium borderradius og på MOBIL
+        l: "18px", //large borderradius og på MOBIL
+        xxl: "40px", //xxlarge borderradius
+        mxxl: "24px", //xxlarge borderradius MOBIL
       },
       backgroundImage: {
         herounit: "url('/src/assets/images/herounit.svg')", //forsidebillede
