@@ -34,7 +34,7 @@ module.exports = {
         mh4special: "1.25rem", //dansestudiet font H2 forside MOBIL
         mh2: "2.125rem", //prompt font H2 MOBIL
       },
-      spacing: {
+      padding: {
         s: "20px", //small padding
         m: "40px", //medium padding
         l: "60px", //large padding
@@ -43,6 +43,14 @@ module.exports = {
         mm: "20px", //medium padding MOBIL
         ml: "30px", //large padding MOBIL
         mxl: "50px", //xlarge padding MOBIL
+      },
+      spacing: {
+        s: "10px", //small gap
+        m: "20px", //medium gap
+        l: "30px", //large gap
+        ms: "5px", //small gap MOBIL
+        mm: "10px", //medium gap MOBIL
+        ml: "15px", //large gap MOBIL
       },
       borderRadius: {
         s: "12px", //small borderradius og på MOBIL
