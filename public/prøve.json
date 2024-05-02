@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "holdnavn": "Audition SDSU",
+    "holdbillede": "card1.svg",
+    "hodlbilledealt": "En gruppe der danser på en scene",
+    "holdbeskrivelse": "Dansestudiet holder audition lørdag d. 15. juni 2024 til vores 1-årige uddannelse. <br/> Ansøgningsfrist: Fredag d. 2. juni 2024.",
+    "tidspunkt": "Læs mere her"
+  },
+  {
+    "id": 2,
+    "holdnavn": "Morph Workshop",
+    "holdbillede": "card2.svg",
+    "hodlbilledealt": "En mand der danser",
+    "holdbeskrivelse": "i Månedens Workshop får vi besøg af Timothy De Mesa Højgaard, som vil give dig inspiration og fokusere på at benytte de værktøjer, som du allerede har bedst muligt.",
+    "tidspunkt": "Læs mere her"
+  },
+  {
+    "id": 3,
+    "holdnavn": "Movement LAB",
+    "holdbillede": "card3.svg",
+    "hodlbilledealt": "En kvinde der danser",
+    "holdbeskrivelse": "Så er hun tilbage! Dette LAB er en helt unik mulighed for at dykke ned i Vittorias magiske bevægelses univers over flere dage.",
+    "tidspunkt": "Læs mere her"
+  }
+]
