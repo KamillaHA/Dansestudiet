@@ -95,6 +95,56 @@ import facebook from "../assets/images/facebook.svg";
     </p>
   </section>
 
+
+
+
+
+  <section x-data="{ alledansehold: []}" x-init="alledansehold = await (await fetch('dansehold.json')).json(); alledansehold.reverse();" class="mb-16">
+    <h2 class="my-8 text-4xl text-persianmosaic-500">Dansehold Efterår 2024</h2>
+    <!-- alt hvad der omhandler cards til dansehold -->
+    <section class="flex flex-wrap justify-center">
+      <template x-for="dansehold in alledansehold" :key="dansehold.id">  
+        <article class="p-4 border border-black rounded-lg max-w-md m-2">
+          <a href="#">
+          <header class="danseholdheader mb-4 relative">
+            <img :src="dansehold.holdbillede" :alt="dansehold.hodlbilledealt" class="">
+            <div class="badge absolute top-3 left-0 ml-2 bg-persianmosaic-500 text-white text-center p-4 w-20 h-20 rounded-full" x-show="">Nyt hold!</div>
+            <div class="badge absolute top-3 right-0 text-white p-4" x-show="dansehold.rabat"><span x-text="dansehold.rabatsats"></span> rabat! </div>
+            <div class="badge absolute bottom-2 right-0 bg-persianmosaic-800 text-white p-4" x-show="(dansehold.pladserpaaholdet - dansehold.antaldeltagere) < 5">Kun få pladser tilbage!</div>
+          </header>
+          <section class="my-4">
+            <h3 class="text-2xl font-bold text-start mb-2" x-text="dansehold.holdnavn"></h3>
+            <div class="flex justify-between">
+            <div class="">
+              <div><span>Tid: </span><span x-text="dansehold.tidspunkt"></span></div>
+              <div><span>Alder: </span><span x-text="dansehold.alder"></span></div>
+              <div><span>Niveau: </span><span x-text="dansehold.niveau"></span></div>
+            </div>
+            <div class="">
+              <div><span>Deltagere: </span><span x-text="dansehold.pladserpaaholdet"></span></div>
+              <div><span>Lokale: </span><span x-text="dansehold.lokale"></span></div>
+            </div>
+            </div>
+            <p class="my-4" x-text="dansehold.holdbeskrivelse"></p>  
+          </section>
+          <hr />
+          <section class="flex mt-4 gap-4">
+            <div class="flex-none">
+              <img :src="dansehold.underviserfoto" :alt="dansehold.underviserfotoalt" class="w-16 h-16 object-cover rounded-full">
+            </div>
+            <div class="">
+              <p class="text-lg font-semibold">Underviser: <span x-text="dansehold.undervisernavn"></span></p>
+              <p class="" x-text="dansehold.underviserinfo"></p>
+            </div>
+          </section>
+          </a>
+        </article>
+        </template>
+
+
+
+
+
   <!-- Sociale medier -->
   <section
     class="md:flex md:flex-row justify-center items-center px-8 py-4 mt-12 mb-12"
