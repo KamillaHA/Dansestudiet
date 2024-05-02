@@ -1,8 +1,6 @@
 ---
 import Button from "./Button.astro";
 ---
-
-!-- Kommende events -->
 <section class="bg-gra1">
   <p class="md:text-h2 text-mh2 text-bla3 font-normal text-center pt-m">
     Vores kommende events
@@ -13,7 +11,6 @@ import Button from "./Button.astro";
     x-init="alledansehold = await (await fetch('card.json')).json(); alledansehold.reverse();"
     class="mb-16"
   >
-    <!-- alt hvad der omhandler cards til dansehold -->
     <section
       class="flex flex-wrap justify-center md:grid md:grid-cols-3 md:m-l"
     >
