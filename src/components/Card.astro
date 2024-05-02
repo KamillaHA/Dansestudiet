@@ -1,0 +1,46 @@
+---
+import Button from "./Button.astro";
+---
+
+!-- Kommende events -->
+<section class="bg-gra1">
+  <p class="md:text-h2 text-mh2 text-bla3 font-normal text-center pt-m">
+    Vores kommende events
+  </p>
+
+  <section
+    x-data="{ alledansehold: []}"
+    x-init="alledansehold = await (await fetch('card.json')).json(); alledansehold.reverse();"
+    class="mb-16"
+  >
+    <!-- alt hvad der omhandler cards til dansehold -->
+    <section
+      class="flex flex-wrap justify-center md:grid md:grid-cols-3 md:m-l"
+    >
+      <template x-for="dansehold in alledansehold" :key="dansehold.id">
+        <article class="bg-white border shadow-lg max-w-md m-l mb-l rounded-xl">
+          <header class="danseholdheader mb-4 relative">
+            <img
+              :src="dansehold.holdbillede"
+              :alt="dansehold.hodlbilledealt"
+              class="w-full h-auto object-cover rounded-t-xl"
+            />
+          </header>
+          <section class="m-m">
+            <h3
+              class="text-2xl font-bold text-start mb-2"
+              x-text="dansehold.holdnavn"
+            >
+            </h3>
+            <p class="my-4" x-text="dansehold.holdbeskrivelse"></p>
+          </section>
+          <p class="text-gul3 cursor-pointer m-m" x-text="dansehold.tidspunkt">
+          </p>
+          <div class="m-m items-end">
+            <Button variant="primary">Tilmeld dig</Button>
+          </div>
+        </article>
+      </template>
+    </section>
+  </section>
+</section>
